@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+.icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  fill: #009fb0;
+  top: 80px;
+  left: 80px;
+  transform: translate(-50%, -50%);
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#fullname {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#fullname path:nth-child(1) {
+  stroke-dasharray: 565px;
+  stroke-dashoffset: 565px;
+  animation: nameAnim 2s ease forwards, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(2) {
+  stroke-dasharray: 323px;
+  stroke-dashoffset: 323px;
+  animation: nameAnim 2s ease forwards 0.3s, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(3) {
+  stroke-dasharray: 576px;
+  stroke-dashoffset: 576px;
+  animation: nameAnim 2s ease forwards 0.6s, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(4) {
+  stroke-dasharray: 806px;
+  stroke-dashoffset: 806px;
+  animation: nameAnim 2s ease forwards 0.9s, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(5) {
+  stroke-dasharray: 418px;
+  stroke-dashoffset: 418px;
+  animation: nameAnim 2s ease forwards 1.2s, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(6) {
+  stroke-dasharray: 576px;
+  stroke-dashoffset: 576px;
+  animation: nameAnim 2s ease forwards 1.5s, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(7) {
+  stroke-dasharray: 565px;
+  stroke-dashoffset: 565px;
+  animation: nameAnim 2s ease forwards 1.8s, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(8) {
+  stroke-dasharray: 565px;
+  stroke-dashoffset: 565px;
+  animation: nameAnim 2s ease forwards 2.1s, fillAnim 0.5s ease forwards 4s;
+}
+#fullname path:nth-child(9) {
+  stroke-dasharray: 513px;
+  stroke-dashoffset: 513px;
+  animation: nameAnim 2s ease forwards 2.4s, fillAnim 0.5s ease forwards 4s;
+}
+
+@keyframes grow {
+  0% {
+  }
+  100% {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@keyframes nameAnim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillAnim {
+  to {
+    fill: rgba(0, 128, 128, 0.685);
+  }
+}
