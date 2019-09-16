@@ -22,6 +22,11 @@ body {
   animation-direction: alternate;
 }
 
+.refresh {
+  text-align: center;
+  margin: 50px;
+}
+
 #fullname {
   position: absolute;
   top: 50%;
